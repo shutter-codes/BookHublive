@@ -1,0 +1,29 @@
+.home .title p {
+    font-size: 1rem;
+    margin-top: .3125rem;
+}
+
+.sort-by {
+    margin-bottom: 3.125rem;
+    display: flex;
+    gap: 2.1875rem;
+}
+
+.sort-by .category-sort, .sort-by .date-sort {
+    display: flex;
+    align-items: center;
+    gap: .9375rem;
+}
+
+.sort-by label {
+    width: fit-content;
+    font-size: .9375rem;
+}
+
+.sort-by select {
+    cursor: pointer;
+}
+
+.sort-by .date-sort select {
+    width: fit-content;
+}

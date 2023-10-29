@@ -1,0 +1,72 @@
+// Register
+POST http://localhost:5000/api/register
+Content-Type: application/json
+
+{
+    "name": "Naitik Sharma",
+    "username": "snan23",
+    "email": "devnaitik104@gmail.com",
+    "password": "naitik123"
+}
+
+// Login
+###
+POST http://localhost:5000/api/login
+Content-Type: application/json
+
+{
+    "email": "devnaitik104",
+    "password": "naitik123"
+}
+
+// Create a post
+###
+POST http://localhost:5000/api/books
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0ZTFlZDI3N2FlMGQzMWY0ZTY4NWNiYiIsImlhdCI6MTY5MjUyODE1OX0.Dwiw9fDkSDWKp1PmSo_zUQX7WT1PN8VrZiXFDGvFL9Q
+
+{
+    "title": "Book Two",
+    "author": "Michael",
+    "picture": "pic1.jpg"
+}
+
+// Follow a user
+###
+PUT http://localhost:5000/api/users/64e1ed277ae0d31f4e685cbb/follow
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0ZTFlZDNjN2FlMGQzMWY0ZTY4NWNiZiIsImlhdCI6MTY5MjUzNDAwNH0.ej3JGbccyW0tVWzP1Y5Skyv6WgL8F1Mcuw1gurzrKM4
+
+// Unfollow a user
+###
+PUT http://localhost:5000/api/users/64e1ed277ae0d31f4e685cbb/unfollow
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0ZTFlZDNjN2FlMGQzMWY0ZTY4NWNiZiIsImlhdCI6MTY5MjUyODA5OX0.ALFk6HcRIljpyKjkTi0Y_pKYkBygcST73GjdlGlC3CU
+
+// Following Books
+###
+GET http://localhost:5000/api/books
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0ZTFlZDNjN2FlMGQzMWY0ZTY4NWNiZiIsImlhdCI6MTY5MjUyODIzMH0.MxggLneDbQ28RAIsFpSG2SiMB46Gl3xsv_95qwyT3zo
+
+// Like a book
+###
+PUT http://localhost:5000/api/books/64e0b33dd803462538b09797/like
+Content-Type: application/json
+
+{
+    "userId": "64e09d381d3bacbdd96525e8"
+}
+
+// Search for books 
+###
+GET http://localhost:5000/api/books/search/john
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0ZTFlZDNjN2FlMGQzMWY0ZTY4NWNiZiIsImlhdCI6MTY5MjczMTY0NX0.JDjz5npSBEGsmeTW9epJttQPVsZdNa4_Y6bMt78B4vo
+
+// get all books
+###
+GET http://localhost:5000/api/books
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0ZTFlZDNjN2FlMGQzMWY0ZTY4NWNiZiIsImlhdCI6MTY5MjczMTY0NX0.JDjz5npSBEGsmeTW9epJttQPVsZdNa4_Y6bMt78B4vo
+
+###
+GET http://localhost:5000/api/books/my-books
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0ZTFlZDNjN2FlMGQzMWY0ZTY4NWNiZiIsImlhdCI6MTY5MjkwMjM3NH0.rr2xFqwqTa-wYfzK0apZ7TZ74AKIk__f6JxfAHlGlfo

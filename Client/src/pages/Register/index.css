@@ -1,0 +1,88 @@
+.register {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.register .container {
+    width: 100%;
+}
+
+.register .container .form {
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+}
+
+.register .container .form h1 {
+    font-size: 2rem;
+    margin-bottom: .3125rem;
+    margin-top: 0;
+}
+
+.register .container .form .line {
+    height: 3px;
+    width: 70px;
+    background-color: var(--main-color);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.register .container .form form {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.register .container .form form .input {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.register .container .form form .input label {
+    font-size: .9375rem;
+}
+
+.register .container .form form .input input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.register .error {
+    margin: 0;
+    color: red;
+}
+
+.register .to-login {
+    display: flex;
+    gap: 1.25rem;
+    font-size: .9375rem;
+}
+
+.register .to-login a {
+    color: var(--main-color);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.register .container .form form button {
+    padding: 10px;
+    border: none;
+    background-color: var(--main-color);
+    color: white;
+    font-weight: 600;
+    font-size: 1rem;
+    margin-top: 30px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
