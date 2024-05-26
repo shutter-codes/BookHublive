@@ -29,15 +29,6 @@
 
 <br><br>
 
-<!-- Demo -->
-<a name="demo"></a>
-
-<br><br>
-
-<!-- Tech stack -->
-<a name="tech-stack"></a>
-
-
 ###  Book Sharing is built using the following technologies:
 - React: The frontend is developed with React, providing a dynamic and responsive user interface.
 - Node.js with Express: The backend is powered by Node.js, using the Express.js framework to handle routing, authentication, and other server-side functionalities.
@@ -47,8 +38,6 @@
 
 <!-- How to run -->
 <a name="how-to-run"></a>
-
-
 > To set up Book Sharing locally, follow these steps:
 
 ### Prerequisites
